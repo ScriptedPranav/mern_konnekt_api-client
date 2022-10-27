@@ -9,7 +9,7 @@ function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
 
   const handleClick = async(user) => {
     try {
-      const res = await axiosInstanceInstance.get(`/conversations/find/${currentId}/${user._id}`);
+      const res = await axiosInstance.get(`/conversations/find/${currentId}/${user._id}`);
       setCurrentChat(res.data)
     }catch(err) {
       console.log(err)
