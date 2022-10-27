@@ -3,11 +3,13 @@ Social Media Web Application built with ReactJS and Real time Chatting , view th
 ## Preview
 
 #### Register new Account then Login();
+![register](https://user-images.githubusercontent.com/86917061/198291945-a71afa67-5080-430e-9ac1-76eded3696d1.png)
 
 #### Post then share();
+![post](https://user-images.githubusercontent.com/86917061/198291974-63abb95f-0847-4b51-8629-79c16728494a.png)
 
 #### Enjoy Chatting();
-
+![chat](https://user-images.githubusercontent.com/86917061/198292000-454b9c21-cfff-4b9a-aae6-5867868c6253.png)
 ## Requirements
 
 - Node(latest)
