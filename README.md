@@ -23,7 +23,8 @@ https://github.com/ScriptedPranav/mern_social_api-client.git
 `Add .env file to root directory with URI of any Mongo Instance`
 
 Run the backend server `npm start`
-Run the frontend `cd api/client` then 'npm start`
+
+Run the frontend `cd api/client` then `npm start`
 
 #### For enabling real time chat
 
