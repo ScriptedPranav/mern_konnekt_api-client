@@ -1,7 +1,7 @@
 import "./online.css";
 
 export default function Online({user}) {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER
+  const PF = "https://konnekt-social.herokuapp.com/images/"
   return (
     <li className="rightbarFriend">
       <div className="rightbarProfileImgContainer">

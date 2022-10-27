@@ -5,7 +5,7 @@ import "./chatOnline.css";
 function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
   const [friends, setFriends] = useState([]);
   const [onlineFriends, setOnlineFriends] = useState([]);
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "https://konnekt-social.herokuapp.com/images/"
 
   const handleClick = async(user) => {
     try {

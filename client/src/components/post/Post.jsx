@@ -15,7 +15,7 @@ export default function Post({ post }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "https://konnekt-social.herokuapp.com/images/"
   const { user: currentUser } = useContext(AuthContext);
 
   useEffect(() => {

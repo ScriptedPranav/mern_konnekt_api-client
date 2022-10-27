@@ -7,7 +7,7 @@ const SearchBar = ({ userList }) => {
   const handleSearch = (event) => {
     setValue(event.target.value);
   };
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "https://konnekt-social.herokuapp.com/images/"
 
   function capitalizeFirstLetter(str) {
     // converting first letter to uppercase

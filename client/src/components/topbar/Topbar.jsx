@@ -12,7 +12,7 @@ export default function Topbar() {
   const [userList, setUserList] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const { user, dispatch } = useContext(AuthContext);
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "https://konnekt-social.herokuapp.com/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
