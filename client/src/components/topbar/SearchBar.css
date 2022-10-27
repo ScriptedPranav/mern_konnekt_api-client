@@ -1,0 +1,47 @@
+
+.searchInput{
+    box-sizing: border-box;
+    padding-left: 2rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.2rem;
+    min-width: 15rem;
+    width: auto;
+    font-size: 1.2rem;
+}
+
+.dropDown{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.dropBox{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    min-width: 15rem;
+    width: fit-content;
+    height: 3.5rem;
+    border: 0.5px;
+    border-color: rgb(224, 224, 224);
+    border-style: solid;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px 0px;
+    
+}
+
+.dropBox:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.dropBox img{
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
