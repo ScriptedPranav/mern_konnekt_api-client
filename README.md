@@ -26,7 +26,7 @@ Run the backend server `npm start`
 
 Run the frontend `cd api/client` then `npm start`
 
-#### For enabling real time chat
+### For enabling real time chat
 
 Clone this repo and place it inside the root directory
 
@@ -36,4 +36,4 @@ https://github.com/ScriptedPranav/mern_social_socket.git
 
 Run the socket server `cd socket && npm start`
 
-- Feel free to create a new Issue :p
+## Enjoy :)
