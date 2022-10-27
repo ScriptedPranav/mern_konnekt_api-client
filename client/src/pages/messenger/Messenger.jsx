@@ -22,7 +22,7 @@ function Messenger() {
   // const sendClickRef = useRef();
 
   useEffect(() => {
-    socket.current = io("https://konnekt-socket.herokuapp.com");
+    socket.current = io("ws://konnekt-socket.herokuapp.com");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
