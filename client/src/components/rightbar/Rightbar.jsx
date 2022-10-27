@@ -18,7 +18,7 @@ export default function Rightbar({ user }) {
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io("ws://localhost:8900");
+    socket.current = io("ws://konnekt-socket.herokuapp.com");
   }, []);
 
   useEffect(() => {
