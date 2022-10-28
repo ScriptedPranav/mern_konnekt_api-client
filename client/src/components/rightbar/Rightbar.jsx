@@ -2,7 +2,7 @@ import "./rightbar.css";
 import Online from "../online/Online";
 import { useContext, useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import {axiosInstance} from "../../config";
+import {axios} from "axios";
 import { AuthContext } from "../../context/AuthContext";
 import { Add, Remove, Edit } from "@mui/icons-material";
 import { io } from "socket.io-client";
@@ -29,10 +29,10 @@ export default function Rightbar({ user }) {
     const getFriends = async () => {
       try {
         if (user) {
-          const friendList = await axiosInstance.get("/users/friends/" + user?._id);
+          const friendList = await axios.get("/users/friends/" + user?._id);
           setFriends(friendList.data);
         } else {
-          const userFriendList = await axiosInstance.get(
+          const userFriendList = await axios.get(
             "/users/friends/" + currentUser._id
           );
           setUserFriends(userFriendList.data);
@@ -60,12 +60,12 @@ export default function Rightbar({ user }) {
   const handleClick = async () => {
     try {
       if (followed) {
-        await axiosInstance.put("/users/" + user?._id + "/unfollow", {
+        await axios.put("/users/" + user?._id + "/unfollow", {
           userId: currentUser._id,
         });
         dispatch({ type: "UNFOLLOW", payload: user?._id });
       } else {
-        await axiosInstance.put("/users/" + user?._id + "/follow", {
+        await axios.put("/users/" + user?._id + "/follow", {
           userId: currentUser._id,
         });
         dispatch({ type: "FOLLOW", payload: user?._id });

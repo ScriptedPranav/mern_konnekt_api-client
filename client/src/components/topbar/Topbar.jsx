@@ -4,7 +4,7 @@ import { Box, Button, Typography, Modal, Popover } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import {axiosInstance} from "../../config";
+import {axios} from "axios";
 import SearchBar from "./SearchBar";
 
 export default function Topbar() {
@@ -43,7 +43,7 @@ export default function Topbar() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const res = await axiosInstance.get("/users/all");
+        const res = await axios.get("/users/all");
         setUserList(res.data);
       } catch (err) {
         console.log(err);

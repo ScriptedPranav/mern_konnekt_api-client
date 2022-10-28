@@ -23,6 +23,11 @@ mongoose
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
 //middleware
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+  });
 app.use(express.json());
 app.use(morgan("common"));
 

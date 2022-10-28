@@ -3,7 +3,7 @@ import { PermMedia, Label, Room, EmojiEmotions , Cancel} from "@mui/icons-materi
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useRef, useState } from "react";
-import {axiosInstance} from "../../config";
+import {axios} from "axios";
 
 export default function Share() {
   const [file, setFile] = useState(null);
@@ -24,13 +24,13 @@ export default function Share() {
       data.append("file", file);
       newPost.img = fileName;
       try {
-        await axiosInstance.post("/upload", data);
+        await axios.post("/upload", data);
       } catch (err) {
         console.log(err);
       }
     }
     try {
-      await axiosInstance.post("/posts", newPost);
+      await axios.post("/posts", newPost);
       window.location.reload();
     } catch (err) {
       console.log(err);
