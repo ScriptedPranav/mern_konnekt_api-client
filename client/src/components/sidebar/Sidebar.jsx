@@ -3,7 +3,7 @@ import Friend from "../friend/Friend"
 import "./sidebar.css"
 import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "../../context/AuthContext"
-import {axios} from "axios"
+import {axiosInstance} from "../../config"
 
 export default function Sidebar({user}) {
   const [friends, setFriends] = useState(null);
@@ -12,7 +12,7 @@ export default function Sidebar({user}) {
   useEffect(()=>{
     const getFriends = async() => {
       try {
-        const res = await axios.get("users/friends/"+ currentUser._id);
+        const res = await axiosInstance.get("users/friends/"+ currentUser._id);
         setFriends(res.data);
       }catch(err) {
         console.log(err)
