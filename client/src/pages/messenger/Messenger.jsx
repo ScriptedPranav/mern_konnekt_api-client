@@ -22,7 +22,7 @@ function Messenger() {
   // const sendClickRef = useRef();
 
   useEffect(() => {
-    socket.current = io("ws://https://konnekt-social.onrender.com/");
+    socket.current = io("ws://https://konnekt-social.onrender.com");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
