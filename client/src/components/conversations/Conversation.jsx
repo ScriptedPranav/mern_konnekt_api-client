@@ -4,7 +4,7 @@ import "./conversation.css";
 
 function Conversation({ conversation, currentUser }) {
   const [user, setUser] = useState(null);
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
 
   useEffect(() => {
     const friendId = conversation.members.find((m) => m !== currentUser._id);

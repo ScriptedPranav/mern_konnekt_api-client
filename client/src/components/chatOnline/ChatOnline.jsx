@@ -5,7 +5,7 @@ import "./chatOnline.css";
 function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
   const [friends, setFriends] = useState([]);
   const [onlineFriends, setOnlineFriends] = useState([]);
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
 
   const handleClick = async(user) => {
     try {

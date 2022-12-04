@@ -8,7 +8,7 @@ import { Add, Remove, Edit } from "@mui/icons-material";
 import { io } from "socket.io-client";
 
 export default function Rightbar({ user }) {
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
   const [friends, setFriends] = useState([]);
   const [followed, setFollowed] = useState(false);
   const [onlineUsers, setOnlineUsers] = useState([]);

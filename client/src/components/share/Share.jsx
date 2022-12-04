@@ -8,7 +8,7 @@ import {axiosInstance} from "../../config";
 export default function Share() {
   const [file, setFile] = useState(null);
   const { user } = useContext(AuthContext);
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
   const desc = useRef();
 
   const submitHandler = async (e) => {

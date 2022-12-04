@@ -10,7 +10,7 @@ import {axiosInstance} from "../../config";
 export default function Profile() {
   const [user, setUser] = useState({});
   const username = useParams().username;
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
 
   useEffect(() => {
     const fetchUser = async () => {

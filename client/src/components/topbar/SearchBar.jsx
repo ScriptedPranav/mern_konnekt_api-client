@@ -7,7 +7,7 @@ const SearchBar = ({ userList }) => {
   const handleSearch = (event) => {
     setValue(event.target.value);
   };
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
 
   function capitalizeFirstLetter(str) {
     // converting first letter to uppercase

@@ -15,7 +15,7 @@ export default function Post({ post }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
   const { user: currentUser } = useContext(AuthContext);
 
   useEffect(() => {

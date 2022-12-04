@@ -12,7 +12,7 @@ export default function Topbar() {
   const [userList, setUserList] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const { user, dispatch } = useContext(AuthContext);
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });

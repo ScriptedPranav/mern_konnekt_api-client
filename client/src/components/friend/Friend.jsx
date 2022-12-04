@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./friend.css";
 
 export default function Friend({ friend }) {
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
   return (
     <Link
       to={`/profile/${friend?.username}`}

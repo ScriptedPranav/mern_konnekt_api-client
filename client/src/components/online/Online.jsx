@@ -1,7 +1,7 @@
 import "./online.css";
 
 export default function Online({user}) {
-  const PF = "https://konnekt-social.herokuapp.com/images/"
+  const PF = "https://konnekt-social.onrender.com/images/"
   return (
     <li className="rightbarFriend">
       <div className="rightbarProfileImgContainer">
