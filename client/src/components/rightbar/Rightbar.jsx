@@ -18,7 +18,7 @@ export default function Rightbar({ user }) {
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io("ws://konnekt-socket.herokuapp.com");
+    socket.current = io("ws://https://konnekt-socket-server.onrender.com");
   }, []);
 
   useEffect(() => {
