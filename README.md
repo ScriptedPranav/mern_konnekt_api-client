@@ -1,4 +1,4 @@
-Social Media Web Application built with ReactJS and Real time Chatting , view the deployment [Konnekt](https://konnekt-social.herokuapp.com/)
+Social Media Web Application built with ReactJS and Real time Chatting , view the deployment [Konnekt](https://konnekt-social.onrender.com/)
 
 ## Preview
 
